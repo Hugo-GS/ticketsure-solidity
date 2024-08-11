@@ -1,4 +1,4 @@
-import Match from "./match";
+import Match from "./Match";
 import classes from "./MatchList.module.css"
 
 const MatchList = ({arr, gitgut}) => {
