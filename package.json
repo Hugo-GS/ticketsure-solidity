@@ -1,18 +1,22 @@
 {
-  "homepage": "https://alvatronsyt.github.io/ticketsure-solidity/",
+  "homepage": "https://github.com/Hugo-GS/ticketsure-solidity",
   "name": "jacaton",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
-  },
+"scripts": {
+  "predeploy": "npm run build",
+  "dev": "vite",
+  "deploy": "gh-pages -d dist",
+  "lint": "eslint .",
+  "preview": "vite preview",
+  "build": "vite build"
+},
+
   "dependencies": {
     "@tanstack/react-query": "^5.51.23",
     "@web3modal/wagmi": "^5.0.11",
+    "gh-pages": "^6.1.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "viem": "^2.19.3",
